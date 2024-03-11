@@ -1,0 +1,9 @@
+**/.cache
+**/.vscode
+**/*.DS_Store
+**/bin
+
+**/Makefile
+
+compile_commands.json
+**/*.sh
