@@ -1,0 +1,2 @@
+# Krona
+C++ Game API
