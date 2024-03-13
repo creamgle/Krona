@@ -13,16 +13,19 @@ project "Krona"
 
     includedirs {
         "src/",
-        "vendor/glfw/include"
+        "vendor/glfw/include",
+        "vendor/glad/include"
     }
 
     links {
-        "GLFW"
+        "GLFW",
+        "Glad"
     }
 
     defines {
         "KR_EXPORT",
-        "GLFW_INCLUDE_NONE"
+        "GLFW_INCLUDE_NONE",
+        "KR_OPENGL"
     }
 
     -- Mac specific libraries for OpenGL and GLFW to work (and possibly others down the road)

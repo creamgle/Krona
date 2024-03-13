@@ -33,3 +33,5 @@ namespace Krona {
 	}
 
 }
+
+#include "Krona/Core/Log.h"

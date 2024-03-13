@@ -24,6 +24,7 @@ namespace Krona {
             static Scope<Window> Create(const WindowData& data = WindowData());
 
             virtual void PollEvents() = 0;
+            virtual void SwapBuffers() = 0;
             virtual bool ShouldClose() = 0;
     };
 

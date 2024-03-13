@@ -7,6 +7,7 @@ Includes = { }
 Includes["Krona"] = "%{wks.location}/Krona/src"
 
 include "Krona/vendor/glfw"
+include "Krona/vendor/glad"
 
 include "Krona"
 include "Game"

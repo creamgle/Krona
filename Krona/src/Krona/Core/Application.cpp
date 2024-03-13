@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "Krona/Renderer/Renderer2D.h"
 #include "Log.h"
 #include "Input.h"
 
@@ -6,6 +7,7 @@ namespace Krona {
 
     bool Application::Run() {
         mWindow = Window::Create();
+        Renderer2D::Initialize();
 
         if (!Create()) {
             Log::Fatal("Application->Create() returned false");
@@ -16,6 +18,7 @@ namespace Krona {
             Update();
 			
 			Input::LateUpdate();
+            mWindow->SwapBuffers();
 			mWindow->PollEvents();
         }
 

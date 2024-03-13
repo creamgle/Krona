@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Krona/Renderer/GraphicsContext.h"
 #include "KronaCore.h"
 #include "Krona/Core/Window.h"
 
@@ -14,6 +15,7 @@ namespace Krona {
             ~Mac_Window() override;
 
             void PollEvents() override;
+            void SwapBuffers() override;
             bool ShouldClose() override;
 
         private:
@@ -22,6 +24,8 @@ namespace Krona {
 
             WindowData mData;
             GLFWwindow* mWindow;
+
+            Ref<GraphicsContext> mContext;
     };
 
 }
